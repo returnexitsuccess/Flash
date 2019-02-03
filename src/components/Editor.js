@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types';
 
 class Editor extends Component {
   
@@ -34,6 +35,15 @@ class Editor extends Component {
       </form>
     )
   }
+}
+
+Editor.propTypes = {
+  editingCard: PropTypes.object.isRequired,
+  editTermChange: PropTypes.func.isRequired,
+  editDefChange: PropTypes.func.isRequired,
+  deleteEdit: PropTypes.func.isRequired,
+  cancelEdit: PropTypes.func.isRequired,
+  saveEdit: PropTypes.func.isRequired,
 }
 
 const editStyle = {

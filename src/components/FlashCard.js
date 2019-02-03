@@ -22,7 +22,8 @@ export class FlashCard extends Component {
 
 // PropTypes
 FlashCard.propTypes = {
-  card: PropTypes.object.isRequired
+  card: PropTypes.object.isRequired,
+  triggerEdit: PropTypes.func.isRequired,
 }
 
 export default FlashCard;

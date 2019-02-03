@@ -27,7 +27,9 @@ class Collection extends Component {
 
 // PropTypes
 Collection.propTypes = {
-  cardsList: PropTypes.array.isRequired
+  cardsList: PropTypes.array.isRequired,
+  triggerEdit: PropTypes.func.isRequired,
+  triggerNew: PropTypes.func.isRequired
 }
 
 const gridStyle = {
